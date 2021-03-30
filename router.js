@@ -5,5 +5,8 @@ const router = express.Router();
 router.get("/", (req, res) => {
   res.send("server is runnning");
 });
+router.get("/lamaChat", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+});
 
 module.exports = router;
