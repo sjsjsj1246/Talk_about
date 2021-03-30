@@ -15,6 +15,9 @@ const app = express();
 const server = http.createServer(app);
 const io = socket(server);
 
+// 리액트 정적 파일 제공
+app.use(express.static(path.join(__dirname, "client/build")));
+
 // 3. 소켓 연결 및 이벤트
 io.on("connection", (socket) => {
   console.log("소켓 연결 완료");
