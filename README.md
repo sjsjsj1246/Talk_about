@@ -12,3 +12,7 @@
 
 - react
 - node express
+
+## 호스팅
+
+- heroku : https://talk-about-client.herokuapp.com/
